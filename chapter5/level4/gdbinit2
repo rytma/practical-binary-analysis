@@ -1,0 +1,10 @@
+set disassembly-flavor intel
+set pagination off
+set logging on
+set logging redirect on
+b *0x400520
+r
+display/i $rip
+while 1
+si
+end
